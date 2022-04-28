@@ -22,7 +22,7 @@ class ServerExpress{
             res.status(200).end();
         });
 
-        this.app.use(require(this.basePathUsers, '../../routes/users'));
+        this.app.use(this.basePathUsers, require('../../routes/users'));
     }
 
     async start() {

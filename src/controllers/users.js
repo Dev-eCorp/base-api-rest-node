@@ -20,14 +20,14 @@ const getAllUsers = (req, res) => {
     res.json(users);
 };
 
-// /**
-//  * 
-//  * @param {express.Request} req 
-//  * @param {express.Response} res 
-//  */
-// const getUserById = (req, res) => {
+/**
+ * 
+ * @param {express.Request} req 
+ * @param {express.Response} res 
+ */
+const getUserById = (req, res) => {
 
-// };
+};
 
 /**
  * 
@@ -70,7 +70,6 @@ const updateUser = (req, res) => {
  */
 const deleteUser = (req, res) => {
     const { id } = req.params;
-    //const id = req.params.id;
     const result = {
         message: `User with id: ${id} deleted`
     }
@@ -79,7 +78,7 @@ const deleteUser = (req, res) => {
 
 module.exports = {
     getAllUsers,
-    //getUserById,
+    getUserById,
     createUser,
     updateUser,
     deleteUser
